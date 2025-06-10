@@ -11,18 +11,6 @@ const Footer = () => {
       { name: 'Equipo', href: '#equipo' },
       { name: 'Documentación', href: '#' }
     ],
-    resources: [
-      { name: 'Blog', href: '#' },
-      { name: 'Investigación', href: '#' },
-      { name: 'Publicaciones', href: '#' },
-      { name: 'Recursos', href: '#' }
-    ],
-    community: [
-      { name: 'Colaboradores', href: '#' },
-      { name: 'Testimonios', href: '#' },
-      { name: 'Eventos', href: '#' },
-      { name: 'Newsletter', href: '#' }
-    ],
     legal: [
       { name: 'Privacidad', href: '#' },
       { name: 'Términos', href: '#' },
@@ -41,8 +29,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8">
-          {/* Brand Section */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Heart className="h-8 w-8 text-blue-400" />
@@ -71,7 +58,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Links Sections */}
           <div>
             <h3 className="font-semibold text-white mb-4">Proyecto</h3>
             <ul className="space-y-2">
@@ -88,37 +74,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-semibold text-white mb-4">Recursos</h3>
-            <ul className="space-y-2">
-              {links.resources.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors duration-200"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
 
-          <div>
-            <h3 className="font-semibold text-white mb-4">Comunidad</h3>
-            <ul className="space-y-2">
-              {links.community.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors duration-200"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+
 
           <div>
             <h3 className="font-semibold text-white mb-4">Legal</h3>

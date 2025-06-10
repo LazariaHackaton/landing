@@ -17,8 +17,7 @@ const AboutSection = () => {
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
               Es una prenda equipada con <strong className="text-blue-800">sensores de proximidad</strong>,
               una <strong className="text-indigo-600">cámara de visión artificial</strong> y
-              <strong className="text-purple-600"> módulos hápticos</strong>. Utiliza IA local en una
-              Raspberry Pi 4B para detectar obstáculos, guiar al usuario, y responder a emergencias.
+              <strong className="text-purple-600"> módulos hápticos</strong>. Utiliza IA para detectar obstáculos, guiar al usuario, y responder a emergencias.
             </p>
 
             <p className="text-lg text-gray-600 leading-relaxed mb-8">

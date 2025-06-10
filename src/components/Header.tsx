@@ -11,7 +11,9 @@ const Header = () => {
     { name: 'Equipo', href: '#equipo' },
     { name: 'Contacto', href: '#contacto' },
   ];
-
+  const handleCollaborateClick = () => {
+    window.location.href = "#contacto";
+  };
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,7 +34,10 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-            <button className="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 transition-colors duration-200">
+            <button
+              onClick={handleCollaborateClick}
+              className="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 transition-colors duration-200"
+            >
               Colaborar
             </button>
           </div>
@@ -44,7 +49,11 @@ const Header = () => {
               className="text-gray-700 hover:text-blue-800 p-2"
               aria-label="Toggle menu"
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
@@ -63,7 +72,10 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <button className="w-full mt-4 bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 transition-colors duration-200">
+              <button
+                onClick={handleCollaborateClick}
+                className="w-full mt-4 bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 transition-colors duration-200"
+              >
                 Colaborar
               </button>
             </div>

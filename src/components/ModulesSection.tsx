@@ -1,12 +1,12 @@
 import React from 'react';
-import { 
-  Eye, 
-  Brain, 
-  Vibrate, 
-  Mic, 
-  Heart, 
-  Shield, 
-  Globe 
+import {
+  Eye,
+  Brain,
+  Vibrate,
+  Mic,
+  Heart,
+  Shield,
+  Globe
 } from 'lucide-react';
 
 const ModulesSection = () => {
@@ -39,13 +39,7 @@ const ModulesSection = () => {
       color: "green",
       gradient: "from-green-500 to-green-600"
     },
-    {
-      icon: Heart,
-      title: "Monitoreo médico",
-      description: "Seguimiento de signos vitales y detección de situaciones de estrés o emergencias médicas.",
-      color: "red",
-      gradient: "from-red-500 to-red-600"
-    },
+
     {
       icon: Shield,
       title: "Seguridad de datos",
@@ -70,7 +64,7 @@ const ModulesSection = () => {
             Módulos del Sistema
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Cada módulo ha sido diseñado con precisión para crear una experiencia integral 
+            Cada módulo ha sido diseñado con precisión para crear una experiencia integral
             que combina seguridad, autonomía y comodidad.
           </p>
           <div className="w-24 h-1 bg-blue-800 mx-auto mt-8"></div>
@@ -87,11 +81,11 @@ const ModulesSection = () => {
                 <div className={`w-16 h-16 bg-gradient-to-r ${module.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <IconComponent className="h-8 w-8 text-white" />
                 </div>
-                
+
                 <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-800 transition-colors duration-300">
                   {module.title}
                 </h3>
-                
+
                 <p className="text-gray-600 leading-relaxed">
                   {module.description}
                 </p>
@@ -113,14 +107,13 @@ const ModulesSection = () => {
         <div className="mt-16 text-center">
           <div className="bg-white rounded-2xl p-8 shadow-lg inline-block">
             <p className="text-lg text-gray-700 mb-4">
-              <strong className="text-blue-800">7 módulos integrados</strong> trabajando en perfecta sincronía
+              <strong className="text-blue-800">6 módulos integrados</strong> trabajando en perfecta sincronía
             </p>
             <div className="flex items-center justify-center space-x-4">
               <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
               <div className="w-3 h-3 bg-purple-500 rounded-full animate-pulse animation-delay-200"></div>
               <div className="w-3 h-3 bg-indigo-500 rounded-full animate-pulse animation-delay-400"></div>
               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse animation-delay-600"></div>
-              <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse animation-delay-800"></div>
               <div className="w-3 h-3 bg-yellow-500 rounded-full animate-pulse animation-delay-1000"></div>
               <div className="w-3 h-3 bg-teal-500 rounded-full animate-pulse animation-delay-1200"></div>
             </div>

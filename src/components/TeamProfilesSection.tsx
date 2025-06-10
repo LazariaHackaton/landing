@@ -60,6 +60,9 @@ const TeamProfilesSection = () => {
       placeholder: true
     }
   ];
+  const handleCollaborateClick = () => {
+    window.location.href = "#contacto";
+  };
 
   return (
     <section className="py-20 bg-white">
@@ -69,8 +72,8 @@ const TeamProfilesSection = () => {
             Quiénes Somos
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Conoce a las personas apasionadas que están transformando la tecnología asistiva
-            y creando un futuro más inclusivo para todos.
+            Conoce a las personas apasionadas que están transformando la
+            tecnología asistiva y creando un futuro más inclusivo para todos.
           </p>
           <div className="w-24 h-1 bg-blue-800 mx-auto mt-8"></div>
         </div>
@@ -80,13 +83,17 @@ const TeamProfilesSection = () => {
             <div
               key={index}
               className={`group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden ${
-                member.placeholder ? 'opacity-75' : ''
+                member.placeholder ? "opacity-75" : ""
               }`}
             >
               <div className="relative">
                 <img
                   src={member.image}
-                  alt={member.placeholder ? "Próximo miembro del equipo" : member.name}
+                  alt={
+                    member.placeholder
+                      ? "Próximo miembro del equipo"
+                      : member.name
+                  }
                   className="w-full h-64 object-cover"
                 />
                 {member.placeholder && (
@@ -100,15 +107,21 @@ const TeamProfilesSection = () => {
               </div>
 
               <div className="p-6">
-                <h3 className={`text-xl font-bold text-gray-900 mb-2 ${
-                  member.placeholder ? 'text-gray-500' : ''
-                }`}>
+                <h3
+                  className={`text-xl font-bold text-gray-900 mb-2 ${
+                    member.placeholder ? "text-gray-500" : ""
+                  }`}
+                >
                   {member.name}
                 </h3>
 
                 <div className="mb-3">
-                  <p className="text-blue-800 font-semibold text-sm">{member.role}</p>
-                  <p className="text-gray-600 text-sm">{member.specialization}</p>
+                  <p className="text-blue-800 font-semibold text-sm">
+                    {member.role}
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    {member.specialization}
+                  </p>
                 </div>
 
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
@@ -164,11 +177,14 @@ const TeamProfilesSection = () => {
               ¿Quieres unirte a nuestro equipo?
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Estamos siempre buscando profesionales apasionados que quieran contribuir
-              a crear tecnología que transforme vidas. Si compartes nuestra visión,
-              nos encantaría conocerte.
+              Estamos siempre buscando profesionales apasionados que quieran
+              contribuir a crear tecnología que transforme vidas. Si compartes
+              nuestra visión, nos encantaría conocerte.
             </p>
-            <button className="bg-blue-800 text-white px-8 py-3 rounded-xl font-semibold hover:bg-blue-900 transition-colors duration-200">
+            <button
+              onClick={handleCollaborateClick}
+              className="bg-blue-800 text-white px-8 py-3 rounded-xl font-semibold hover:bg-blue-900 transition-colors duration-200"
+            >
               Únete al equipo
             </button>
           </div>
