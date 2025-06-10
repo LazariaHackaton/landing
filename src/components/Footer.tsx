@@ -145,7 +145,7 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center space-x-6 text-sm text-gray-400">
-              <span>🇨🇴 Hecho en Colombia</span>
+              <span>🇨🇴 Hecho en Perú</span>
               <span>•</span>
               <span>Licencia Open Source</span>
               <span>•</span>

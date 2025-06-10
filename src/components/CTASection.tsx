@@ -46,7 +46,7 @@ const CTASection = () => {
             Colabora con esta iniciativa
           </h2>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Únete a nosotros para llevar esta tecnología a quienes más la necesitan. 
+            Únete a nosotros para llevar esta tecnología a quienes más la necesitan.
             Juntos podemos crear un mundo más accesible e inclusivo.
           </p>
           <div className="w-24 h-1 bg-white mx-auto mt-8"></div>
@@ -56,7 +56,7 @@ const CTASection = () => {
           {/* Contact Form */}
           <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 lg:p-10">
             <h3 className="text-2xl font-bold mb-6 text-center">¿Cómo puedes ayudar?</h3>
-            
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
@@ -74,7 +74,7 @@ const CTASection = () => {
                     placeholder="Tu nombre"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">
                     Correo electrónico *
@@ -158,7 +158,7 @@ const CTASection = () => {
           <div className="space-y-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8">
               <h3 className="text-2xl font-bold mb-6">Formas de colaborar</h3>
-              
+
               <div className="space-y-4">
                 {collaborationTypes.map((type, index) => {
                   const IconComponent = type.icon;
@@ -174,7 +174,7 @@ const CTASection = () => {
 
             <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8">
               <h3 className="text-2xl font-bold mb-6">Contáctanos directamente</h3>
-              
+
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <Mail className="h-6 w-6 text-blue-200" />
@@ -183,28 +183,28 @@ const CTASection = () => {
                     <div className="text-blue-200">colaboracion@chalecoInteligente.org</div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center space-x-4">
                   <Phone className="h-6 w-6 text-blue-200" />
                   <div>
                     <div className="font-medium">Teléfono</div>
-                    <div className="text-blue-200">+57 (1) 234-5678</div>
+                    <div className="text-blue-200">+51 999999999</div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center space-x-4">
                   <MapPin className="h-6 w-6 text-blue-200" />
                   <div>
                     <div className="font-medium">Ubicación</div>
-                    <div className="text-blue-200">Bogotá, Colombia</div>
+                    <div className="text-blue-200">Huánuco, Perú</div>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8 pt-6 border-t border-white/20">
                 <p className="text-blue-100 text-sm leading-relaxed">
-                  Estamos abiertos a colaboraciones de todo tipo: financiación, investigación, 
-                  distribución, pruebas piloto, y cualquier forma de apoyo que pueda acelerar 
+                  Estamos abiertos a colaboraciones de todo tipo: financiación, investigación,
+                  distribución, pruebas piloto, y cualquier forma de apoyo que pueda acelerar
                   el impacto de esta tecnología.
                 </p>
               </div>
